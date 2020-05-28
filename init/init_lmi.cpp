@@ -43,26 +43,20 @@ void load_properties(const char *model) {
     property_set("ro.product.device", model);
 }
 
-// TODO: Detect cmi
+// TODO: Detect lmi
 void vendor_load_properties() {
+
     property_set("ro.bootimage.build.date.utc", "1546335651");
     property_set("ro.build.date.utc", "1546335651");
+
     std::string device_region = android::base::GetProperty("ro.boot.hwc", "");
-    if (device_region == "CN")
+    if (device_region == "INDIA")
     {
-        load_properties("umi");
-    }
-    else if (device_region == "INDIA")
-    {
-        load_properties("umiin");
-    }
-    else if (device_region == "GLOBAL")
-    {
-        load_properties("umi");
+        load_properties("lmiin");
     }
     else
     {
-        load_properties("umi");
+        load_properties("lmi");
     }
 }
 

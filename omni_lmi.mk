@@ -15,8 +15,8 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := umi
-DEVICE_PATH := device/xiaomi/umi
+PRODUCT_RELEASE_NAME := lmi
+DEVICE_PATH := device/xiaomi/lmi
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
@@ -26,10 +26,10 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := umi
-PRODUCT_NAME := omni_umi
+PRODUCT_DEVICE := lmi
+PRODUCT_NAME := omni_lmi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi 10
+PRODUCT_MODEL := POCO F2 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 # HACK: Set vendor patch level
