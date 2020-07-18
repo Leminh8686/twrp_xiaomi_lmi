@@ -14,6 +14,16 @@
 # limitations under the License.
 #
 
+# Path of your SHRP Tree
+SHRP_PATH := device/xiaomi/lmi
+# Maintainer name 
+SHRP_MAINTAINER := xiami
+# Device codename 
+SHRP_DEVICE_CODE := lmi
+# Recovery Type 
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A/B
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -137,3 +147,6 @@ TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_NO_SCREEN_BLANK := true
 PLATFORM_VERSION := 16.1.0
+SHRP_EXPRESS := true
+SHRP_DARK := true
+SHRP_INTERNAL := /sdcard SHRP_OTG := /usb_otg
